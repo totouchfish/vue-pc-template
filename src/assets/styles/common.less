@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+/**
+  *  整体布局公用样式
+  *  越少越好，请勿轻易改动
+  */
+
+/**
+  *  全局公用样式
+  *
+  */
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999999;
+  font-size: 12px;
+}
+
+input::-moz-input-placeholder,
+textarea::-moz-input-placeholder {
+  /* mozilla browsers */
+  color: #999999;
+  font-size: 12px;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  /* mozilla browsers */
+  color: #999999;
+  font-size: 12px;
+}
+
+input::input-placeholder,
+textarea::input-placeholder {
+  /* mozilla browsers */
+  color: #999999;
+  font-size: 12px;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.left,
+.fl {
+  float: left;
+}
+
+.right,
+.fr {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
+.margin-15 {
+  margin: 15px;
+}
+.boxWrapper {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.gutter20 {
+  position: relative;
+  padding-bottom: 40px!important;
+}
+.gutter20:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(238, 238, 238, 0.527);
+  height: 20px;
+}
+.bg-white {
+  background: rgb(255, 255, 255);
+  // padding: 15px 15px 0px;
+}
+
+.b-white {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+// ------------------------
+.start-body {
+  overflow: unset;
+}
+
+.end-body {
+  overflow: auto;
+}
+
+.el-loading-spinner {
+  .el-icon-loading {
+    font-size: 45px;
+  }
+}
+
+#app a {
+  text-decoration: none;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1)
+}
+
+.box-shadow1 {
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+// 普通文字颜色link
+.el-link-text {
+  color: #409EFF;
+  cursor: pointer;
+}
+
+// 滚动条
+.el-scrollbar__wrap {
+  overflow-x: hidden !important;
+}
+
+.el-select-dropdown .el-scrollbar__wrap {
+  overflow-x: scroll !important;
+}
+
+.el-scroll-bar {
+  position: relative;
+  height: 100%;
+}
+
+.el-scroll-bar .is-horizontal {
+  display: none !important;
+}
+
+.el-height-full {
+  height: 100%;
+}
+
+.default-size {
+  font-size: 18px !important;
+}
+
+.inline-default-size {
+  font-size: 16px !important;
+}
+
+.h1-title {
+  font-size: 22px !important;
+}
+
+.h2-title {
+  font-size: 20px !important;
+}

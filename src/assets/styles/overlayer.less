@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/**
+  * styles for overwriting iviews/elementui/weui etc.
+  * 覆盖第三方UI库样式表
+  */
+
+// 重写elementui 样式
+// tab 切换样式
+.mc-tab-current {
+  .el-tabs__nav {
+    padding: 5px 0;
+  }
+
+  .el-tabs__nav-wrap {
+    padding: 0 15px !important;
+  }
+
+  .el-tabs__header {
+    margin: 0 !important;
+  }
+
+  .el-tabs__item {
+    font-size: 16px;
+  }
+}
+
+.el-form-item__error {
+  padding-top: 9px;
+  text-indent: 10px;
+}
+
+
+@borderColor: #eaedf1 !important;
+// 表格 start
+.el-table {
+  font-size: 16px!important;
+  color: #555555!important;
+}
+
+.el-table td {
+  border-color: @borderColor;
+}
+
+.el-table thead th {
+  background-color: #eaedf1 !important;
+}
+
+.el-table thead th>.cell {
+  font-size: 18px !important;
+  color: #333333;
+}
+// 表格 end
+
+.el-menu-item .iconfont {
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+.el-submenu__title .iconfont{
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+.el-form-item__label{
+  font-size: 16px;
+}
+.el-link-size{
+  font-size: 16px;
+}
+.el-icon-caret-bottom{
+  font-size: 17px;
+  position: relative;
+  top: -3px;
+  color: #409EFF;
+}
